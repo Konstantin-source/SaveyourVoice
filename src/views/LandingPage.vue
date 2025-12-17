@@ -5,17 +5,7 @@
       <div class="container">
         <div class="nav-content">
           <div class="logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2C13.1 2 14 2.9 14 4V12C14 13.1 13.1 14 12 14C10.9 14 10 13.1 10 12V4C10 2.9 10.9 2 12 2Z" fill="url(#gradient1)"/>
-              <path d="M19 10V12C19 15.866 15.866 19 12 19C8.134 19 5 15.866 5 12V10H7V12C7 14.761 9.239 17 12 17C14.761 17 17 14.761 17 12V10H19Z" fill="url(#gradient1)"/>
-              <path d="M12 19V22M8 22H16" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="gradient1" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#a855f7"/>
-                  <stop offset="1" stop-color="#38bdf8"/>
-                </linearGradient>
-              </defs>
-            </svg>
+            <img src="/logo.png" alt="Save your Voice Logo" class="logo-image" />
             <span>Save your Voice</span>
           </div>
           <button class="cta-button" @click="goToDashboard">Dashboard ansehen</button>
@@ -191,7 +181,7 @@
           <div class="pricing-card">
             <div class="pricing-label">Starter</div>
             <div class="pricing-price">
-              <span class="price-amount">€99</span>
+              <span class="price-amount">€29,99</span>
               <span class="price-period">/Monat</span>
             </div>
             <ul class="pricing-features">
@@ -206,7 +196,7 @@
             <div class="pricing-badge">Beliebt</div>
             <div class="pricing-label">Professional</div>
             <div class="pricing-price">
-              <span class="price-amount">€299</span>
+              <span class="price-amount">€99,99</span>
               <span class="price-period">/Monat</span>
             </div>
             <ul class="pricing-features">
@@ -221,7 +211,8 @@
           <div class="pricing-card">
             <div class="pricing-label">Enterprise</div>
             <div class="pricing-price">
-              <span class="price-amount">Custom</span>
+              <span class="price-amount">€399,99</span>
+              <span class="price-period">/Monat</span>
             </div>
             <ul class="pricing-features">
               <li>✓ Unbegrenzte Analyse</li>
@@ -394,6 +385,12 @@ const goToDashboard = () => {
   gap: 0.75rem;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .cta-button {

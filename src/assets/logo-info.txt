@@ -1,0 +1,2 @@
+Bitte speichere das bereitgestellte Logo-Bild als "logo.png" in diesem Ordner.
+Das Logo sollte ein PNG mit transparentem Hintergrund sein.
